@@ -1,2 +1,40 @@
 # Calculator
 Basıc Calculator
+#include <iostream>
+using namespace std;
+
+int main(){
+    char op ;
+    float num1, num2;
+
+    cout << "Enter Operator: +, -, *, /,";
+    cin >> num1 >> num2;
+
+    switch (op) {
+
+    case '+':
+        cout << num1 << " + " << num2 << " = " << num1 + num2;
+        break;
+
+    case ' - ':
+        cout << num1 << " - " << num2 << " = " << num1 - num2;
+        break;
+
+    case ' * ':
+        cout << num1 << " * " << num2 << " = " << num1 * num2;
+        break;
+
+    case ' / ':
+        cout << num1 << " / " << num2 << " = " << num1 / num2;
+        break;
+        
+    default:
+        cout << "Wronng! operator is not correct Try Again";
+        break;
+    }
+
+    return 0;
+}    
+    
+
+
